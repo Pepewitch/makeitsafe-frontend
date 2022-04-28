@@ -50,7 +50,7 @@ export const LandingPage = () => {
       <Navbar />
       <Layout>
         {/* Section 1 */}
-        <div className="flex w-full mt-48 mb-48">
+        <div className="flex w-full sm:flex-row flex-col-reverse mt-48 mb-48">
           <div className="flex-1 flex flex-col self-stretch justify-center mr-8">
             <div>
               <h1 className="text-8xl font-bold">ASEAN</h1>
@@ -65,13 +65,13 @@ export const LandingPage = () => {
               </button>
             </div>
           </div>
-          <div className="self-stretch">
+          <div className="self-stretch mb-8 sm:mb-0">
             <img src="/placeholder.png" alt="Lorem Image" />
           </div>
         </div>
 
         {/* Section 2 */}
-        <div className="grid w-full mb-24 grid-cols-2 gap-8">
+        <div className="grid w-full mb-24 grid-cols-1 sm:grid-cols-2 gap-8">
           <Card className="bg-white">
             <h1 className="text-4xl mb-4 font-bold">Bootcamp</h1>
             <p className="text-md mb-8">
@@ -127,7 +127,7 @@ export const LandingPage = () => {
         {/* Section 3 */}
         <div className="mb-24">
           <h1 className="text-4xl font-bold mb-4">Timeline</h1>
-          <div className="grid w-full grid-cols-2 gap-8">
+          <div className="grid w-full grid-cols-1 sm:grid-cols-2 gap-8">
             {timelineData.map(({ title, timelines }, index) => (
               <div className="flex flex-col" key={index}>
                 <h2 className="text-2xl font-bold mb-4">{title}</h2>
@@ -154,9 +154,9 @@ export const LandingPage = () => {
         {/* Section 4 */}
         <div className="mb-24">
           <h1 className="text-4xl font-bold mb-8">Blog</h1>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-4 grid-cols-2 gap-4">
             {blogData.map(({ image, title, author }, index) => (
-              <div className="flex flex-col" key={index}>
+              <div className="flex flex-col mb-4" key={index}>
                 <div
                   className="h-0 mb-4 relative"
                   style={{ paddingBottom: '66.67%' }}
