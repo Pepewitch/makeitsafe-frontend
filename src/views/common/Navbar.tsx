@@ -8,7 +8,7 @@ export const Navbar = () => {
           <h1 className="font-bold text-blue-600">FLOW</h1>
           <div className="flex items-center flex-1 px-4 justify-center">
             <a className="mx-2 w-16">Tab1</a>
-            <a className="mx-2 w-16">Tab1</a>
+            <a className="mx-2 w-16">Tab2</a>
             <a className="mx-2 w-16">Tab3</a>
           </div>
           <div>
